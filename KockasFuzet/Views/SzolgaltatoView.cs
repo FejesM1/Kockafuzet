@@ -14,7 +14,7 @@ namespace KockasFuzet.Views
         {
         }
 
-        public void ShowSzolgaltato(Szolgaltato szolgaltato)
+        static public void ShowSzolgaltato(Szolgaltato szolgaltato)
         {
             Console.WriteLine($"Rövid név: {szolgaltato.Rovidnev}");
             Console.WriteLine($"Név: {szolgaltato.Nev}");
