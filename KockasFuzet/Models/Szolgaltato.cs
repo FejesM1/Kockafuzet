@@ -12,18 +12,22 @@ namespace KockasFuzet.Models
         string rovidnev;
         string ugfelszolgalat;
 
+        public string Nev { get => nev; set => nev = value; }
+        public string Rovidnev { get => rovidnev; set => rovidnev = value; }
+        public string Ugyfelszolgalat { get => ugfelszolgalat; set => ugfelszolgalat = value; }
+
         public Szolgaltato(string nev, string rovidnev, string ugfelszolgalat)
         {
-            this.nev = nev;
-            this.rovidnev = rovidnev;
-            this.ugfelszolgalat = ugfelszolgalat;
+            this.Nev = nev;
+            this.Rovidnev = rovidnev;
+            this.Ugyfelszolgalat = ugfelszolgalat;
         }
 
         public Szolgaltato() { }
 
         public override string ToString()
         {
-            return $"Név: {nev}, Rövid név: {rovidnev}, Ügyfélszolgálat: {ugfelszolgalat}";
+            return $"Név: {Nev}, Rövid név: {Rovidnev}, Ügyfélszolgálat: {Ugyfelszolgalat}";
         }
     }
 }
